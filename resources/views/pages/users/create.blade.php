@@ -98,15 +98,15 @@
                                     <label class="form-label">Roles</label>
                                     <div class="selectgroup w-100">
                                         <label class="selectgroup-item">
-                                            <input type="radio" name="roles" value="ADMIN" class="selectgroup-input" checked="">
+                                            <input type="radio" name="roles" value="admin" class="selectgroup-input" checked="">
                                             <span class="selectgroup-button">Admin</span>
                                         </label>
                                         <label class="selectgroup-item">
-                                            <input type="radio" name="roles" value="STAFF" class="selectgroup-input" checked="">
+                                            <input type="radio" name="roles" value="staff" class="selectgroup-input" checked="">
                                             <span class="selectgroup-button">Staff</span>
                                         </label>
                                         <label class="selectgroup-item">
-                                            <input type="radio" name="roles" value="USER" class="selectgroup-input" checked="">
+                                            <input type="radio" name="roles" value="user" class="selectgroup-input" checked="">
                                             <span class="selectgroup-button">User</span>
                                         </label>
                                     </div>

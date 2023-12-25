@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
             'name' => 'Admin-Wildan',
             'email' => 'wildanedan@fic11.com',
             'password' => Hash::make('12345678'),
-            'roles' => 'ADMIN',
+            'roles' => 'admin',
             'phone' => '081315578059',
         ]);
     }
