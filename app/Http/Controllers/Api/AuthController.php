@@ -61,18 +61,23 @@ class AuthController extends Controller
         }
 
         if(!Hash::check($request->password, $user->password)){
-            $token = $user->createToken('auth_token')->plainTextToken;
-
-            $response = [
-                'user' => $user,
-                'token' => $token,
-            ];
-            return response($response,201);
-
-        }else{
             return response([
                 'message' => ['Password not match.'],
             ],404);
     }
-}
+        $token = $user->createToken('auth_token')->plainTextToken;
+
+        return response([
+            'user' => $user,
+            'token' => $token,
+        ],200);
+    }
+
+    public function logout(Request $request)
+    {
+        $request->user()->currentAccessToken()->delete();
+        return response()->json([
+            'messagge' => 'logout successful',
+        ]);
+    }
 }
